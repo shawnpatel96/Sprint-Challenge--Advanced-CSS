@@ -173,8 +173,6 @@ nav {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  position: fixed;
-  margin-left: 28.5%;
 }
 nav div {
   padding: 1%;
@@ -200,7 +198,6 @@ footer {
 }
 .home .intro .header-image {
   border-radius: 2%;
-  margin-top: 14%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -315,6 +312,10 @@ footer {
   100% {
     transform: scale(0);
   }
+}
+.aboutnav {
+  position: fixed;
+  margin-left: 28.5%;
 }
 .aboutbtn {
   background-color: #010b49;
