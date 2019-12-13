@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .header-image{
+      border-radius: 2%;
+    }
 
     h2 {
       padding: 15px;
@@ -15,6 +18,18 @@
   }
 
   .space-images {
+    @media @phone {
+      .blast{
+        width:100%;
+      }
+      .sky{
+        display:none;
+      }
+      .launch{
+        display:none;
+      }
+
+    }
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -40,13 +55,21 @@
   }
 
   .walk {
+    
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      display:flex;
+      flex-direction: column-reverse;
+  }
 
     .walk-text {
+      @media @phone{
+        width:100%;
+      }
       width: 50%;
 
       h3 {
@@ -58,12 +81,22 @@
       }
 
       .btn {
+       .signup(rgb(0, 0, 22),white);
+       @media @phone{
+        width:100%;
+        
+      }
       }
     }
 
     .walk-img {
+      
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        width:100%;
+        margin-left:0;
+      }
       
       img {
         width: 100%;
