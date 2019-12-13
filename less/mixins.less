@@ -1,1 +1,40 @@
 // Mixins Here
+
+//Nav Center
+.center{
+max-width: 1000px;
+width: 100%;
+margin: 0 auto;  
+}
+
+
+//CTA Sign UP button
+.signup(@bg, @color){
+        background:@bg;
+        color:@color;
+        font-size:2rem;
+        width:35%;
+        padding:3%;
+        border-radius: 5%;
+        text-align: center;
+        &:hover{
+            background-color:white;
+            color:rgb(0, 0, 22);
+        }
+}
+//general template 
+.flex-template(@flexdirection, @justify, @align, @textalign){
+    display:flex;
+    flex-direction: @flexdirection;
+    justify-content: @justify;
+    align-items: @align;
+    text-align: @textalign;
+}
+
+
+//Media Q's
+@phone: ~'( max-width: 500px )';
+
+//Form Mixins
+
+
